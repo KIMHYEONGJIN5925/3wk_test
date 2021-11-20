@@ -2,7 +2,7 @@ const mongoose = require("mongoose");
 
 const connect = () => {
   mongoose
-    .connect("mongodb://test:test@localhost:27017/admin", {
+    .connect("mongodb://test:test@localhost:27017/admin", {  //localhost:27017/testAfterSubmitBoard : 로컬DB 테스트용
       useNewUrlParser: true,
       useUnifiedTopology: true,
       ignoreUndefined: true

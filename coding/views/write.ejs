@@ -65,19 +65,17 @@
             return false;
         }
         if (document.frm.inputTitle.value == '') {
-            alert('제목입력해주세요.')
+            alert('제목 입력해주세요.')
             return false;
         }  
         if (document.frm.inputContent.value == '') {
             alert('내용 입력해주세요.')
             return false;
+        } else {
+          saveBoard();
         }
-        document.frm.submit()
     }
-        
-
-
-
+      
       function saveBoard() {
 
       let today = new Date();
@@ -168,7 +166,7 @@
         </tr>
     </table>
     <div class = 'button_div'>
-        <button type='button' onclick='fn_submit(); saveBoard();' > 저장하기 </button>
+        <button type='button' onclick='fn_submit();' > 저장하기 </button>
         <button type='reset' onclick = 'window.location.href="/home"'> 취소 </button>
     </div>
     </form>
